@@ -32,16 +32,19 @@ class Program
 
         Console.WriteLine(word);
 
-        // #3. Даны 2 (3) строки, необходимо зеркально отразить каждую строку и вывести в консоль друг за другом
+        // #3. Даны 2 строки, необходимо зеркально отразить каждую строку и вывести в консоль друг за другом
         string first = "llaF";
         string second = "tuo";
-        string third = "sageV weN";
+        string third = "sageV weN"; 
         string[] wordArray = { first, second, third };
 
         foreach (var element in wordArray)
         {
             Console.WriteLine(ReverseWord(element));
         }
+
+        // Или если друг за другом значит - в одну строку.
+        // Console.WriteLine(ReverseWord(first) + ReverseWord(second) + " " + ReverseWord(third));
 
         Console.ReadKey();
     }
